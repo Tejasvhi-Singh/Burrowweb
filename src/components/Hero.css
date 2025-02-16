@@ -30,3 +30,31 @@
   background-color: rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3em 1em;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero a {
+    padding: 0.5em 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+}

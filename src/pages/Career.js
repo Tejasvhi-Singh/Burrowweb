@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Career.css';
 
 const Career = () => {
@@ -6,6 +6,14 @@ const Career = () => {
     { id: 1, message: 'Interview on 20th Feb at 10:00 AM, Venue: XYZ Hall' },
     { id: 2, message: 'Submit your resume by 18th Feb' },
   ]);
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/career')
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -58,6 +66,9 @@ const Career = () => {
           ))}
         </ul>
       </section>
+      <div>
+        {data ? <p>{data.message}</p> : <p>Loading...</p>}
+      </div>
     </main>
   );
 };
