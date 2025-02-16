@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Career.css';
 
+const styles = {
+  container: {
+    backgroundColor: '#000000',
+    color: '#FFFFFF'
+  }
+};
+
 const Career = () => {
   const [notifications] = useState([
     { id: 1, message: 'Interview on 20th Feb at 10:00 AM, Venue: XYZ Hall' },
@@ -37,7 +44,7 @@ const Career = () => {
   };
 
   return (
-    <main className="career-page">
+    <main className="career-page" style={styles.container}>
       <h1>Career Opportunities</h1>
       <form className="career-form" onSubmit={handleSubmit}>
         <label>

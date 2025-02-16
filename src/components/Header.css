@@ -1,6 +1,6 @@
 header {
-  background: linear-gradient(90deg, #123524, #3e7b27);
-  color: #fff;
+  background-color: #222831;
+  color: #EEEEEE;
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@ header::before {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #85a947, #efe3c2);
+  background: #00ADB5;
 }
 
 header .logo {
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #EEEEEE;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -56,8 +56,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #efe3c2;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #222831;
+  background-color: #00ADB5;
   transform: scale(1.05);
 }
 

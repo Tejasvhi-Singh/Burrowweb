@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 3em 2em;
-  background: linear-gradient(135deg, #85a947, #3e7b27);
-  color: #efe3c2;
+  background-color: #222831;
+  color: #EEEEEE;
 }
 
 .hero-section .text {
@@ -25,6 +25,10 @@
   height: 350px;
   border-radius: 50%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+  background-color: #000000;
 }
 
 @media (max-width: 768px) {

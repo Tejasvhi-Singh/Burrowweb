@@ -3,7 +3,8 @@
   display: flex;
   gap: 2em;
   align-items: center;
-  background: #85a947;
+  background: #222831;
+  color: #EEEEEE;
   padding: 1.5em;
   border-radius: 10px;
 }
@@ -17,7 +18,7 @@
 
 .contact-section .details {
   flex: 1;
-  color: #123524;
+  color: #EEEEEE;
 }
 
 .contact-section .details h3 {
